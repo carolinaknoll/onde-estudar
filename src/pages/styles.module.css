@@ -1,0 +1,25 @@
+.home {
+  height: 100vh;
+
+  &Description {
+    height: 100vh;
+    background: #42f59e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &DescriptionText {
+    max-width: 800px;
+    padding: 20px 0;
+
+    &Title {
+      text-align: center;
+    }
+
+    &Paragraph {
+      padding: 10px 0;
+    }
+  }
+}
