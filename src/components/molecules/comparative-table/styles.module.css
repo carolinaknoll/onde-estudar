@@ -1,0 +1,29 @@
+.comparativeTable {
+  &Title {
+    text-align: center;
+  }
+
+  &Content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  &Pros,
+  &Cons {
+    width: 50%;
+    padding: 0 10px;
+  }
+
+  &Pros {
+    color: #0ca611;
+    height: auto;
+  }
+
+  &Cons {
+    color: #e30d02;
+    height: auto;
+  }
+}

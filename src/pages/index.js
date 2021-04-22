@@ -1,7 +1,10 @@
 import React from 'react'
 
 import { Heading } from '_atoms'
+import { ComparativeTable } from '_molecules'
 import { Layout } from '_templates'
+
+import { comparativeData } from '_data/comparative'
 
 import styles from './styles.module.css'
 
@@ -30,6 +33,30 @@ const Home = () => {
             </Heading>
           </div>
         </div>
+      </section>
+
+      <section className={styles.comparative} id="comparative">
+        <div className={styles.comparativeIntroduction}>
+          <Heading type="h2" form="cursive" className={styles.homeDescriptionTextTitle}>
+            Comparativo
+          </Heading>
+
+          <Heading type="h6" form="print" className={styles.homeDescriptionTextParagraph}>
+            Os dados abaixo possuem o intuito de dar luz às diferenças, agrupadas em categorias de
+            prós e contras, de cada um dos locais de ensino que podem ser utilizados por um aluno.
+          </Heading>
+
+          <Heading type="h6" form="print" className={styles.homeDescriptionTextParagraph}>
+            Cabe a cada pai, munido do dever de conhecer bem seu filho, realizar a escolha que se
+            evidenciará como a mais proveitosa, de acordo com seus critérios e objetivos familiares.
+          </Heading>
+        </div>
+
+        <Heading type="h4" form="cursive" className={styles.homeDescriptionTextTitle}>
+          Ensino Público
+        </Heading>
+
+        <ComparativeTable data={comparativeData.publicSchool} />
       </section>
     </Layout>
   )

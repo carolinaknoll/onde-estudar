@@ -2,8 +2,9 @@ export const comparativeData = {
   publicSchool: {
     title: 'Ensino Público',
     description: 'Descrição',
-    factors: {
-      infrastructure: {
+    factors: [
+      {
+        type: 'infrastructure',
         title: 'Estrutura física e Localização',
         description: 'Descrição',
         topics: {
@@ -19,7 +20,8 @@ export const comparativeData = {
           ],
         },
       },
-      costs: {
+      {
+        type: 'costs',
         title: 'Custos, Mensalidades e Materiais',
         description: 'Descrição',
         topics: {
@@ -36,7 +38,8 @@ export const comparativeData = {
           ],
         },
       },
-      faculty: {
+      {
+        type: 'faculty',
         title: 'Corpo Docente',
         description: 'Descrição',
         topics: {
@@ -51,7 +54,8 @@ export const comparativeData = {
           ],
         },
       },
-      parentalCommitment: {
+      {
+        type: 'parentalCommitment',
         title: 'Empenho por parte dos pais',
         description: 'Descrição',
         topics: {
@@ -65,7 +69,8 @@ export const comparativeData = {
           ],
         },
       },
-      teachingMethod: {
+      {
+        type: 'teachingMethod',
         title: 'Método de Ensino e Tratamento Personalizado',
         description: 'Descrição',
         topics: {
@@ -79,7 +84,8 @@ export const comparativeData = {
           ],
         },
       },
-      schoolRoutines: {
+      {
+        type: 'schoolRoutines',
         title: 'Rotina Escolar e Socialização',
         description: 'Descrição',
         topics: {
@@ -92,7 +98,8 @@ export const comparativeData = {
           ],
         },
       },
-      values: {
+      {
+        type: 'values',
         title: 'Valores',
         description: 'Descrição',
         topics: {
@@ -104,7 +111,7 @@ export const comparativeData = {
           ],
         },
       },
-    },
+    ],
   },
 }
 

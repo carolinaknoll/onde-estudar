@@ -6,6 +6,7 @@ module.exports = {
     extensions: ['.js', '.css'],
     alias: {
       _atoms: path.resolve(__dirname, 'src', 'components', 'atoms'),
+      _molecules: path.resolve(__dirname, 'src', 'components', 'molecules'),
       _components: path.resolve(__dirname, 'src', 'components'),
       _config: path.resolve(__dirname, 'src', 'config'),
       _images: path.resolve(__dirname, 'src', 'images'),
