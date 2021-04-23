@@ -52,11 +52,15 @@ const Home = () => {
           </Heading>
         </div>
 
-        <Heading type="h4" form="cursive" className={styles.homeDescriptionTextTitle}>
-          Ensino Público
-        </Heading>
+        {comparativeData.map((item, index) => (
+          <div key={`comparative-item-${index}`}>
+            <Heading type="h4" form="cursive" className={styles.homeDescriptionTextTitle}>
+              {item.title}
+            </Heading>
 
-        <ComparativeTable data={comparativeData.publicSchool} />
+            <ComparativeTable data={item} />
+          </div>
+        ))}
       </section>
     </Layout>
   )

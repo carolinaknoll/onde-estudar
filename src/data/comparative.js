@@ -1,5 +1,6 @@
-export const comparativeData = {
-  publicSchool: {
+export const comparativeData = [
+  {
+    type: 'publicSchool',
     title: 'Ensino Público',
     description: 'Descrição',
     factors: [
@@ -113,7 +114,7 @@ export const comparativeData = {
       },
     ],
   },
-}
+]
 
 /*
   corpo docente,
